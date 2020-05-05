@@ -73,7 +73,8 @@ class Transaction():
             'extra': {
                 'ip': ip,
                 'supp_id': kwargs.get('supp_id') or '',
-                'note': kwargs.get('note') or ''
+                'note': kwargs.get('note') or '',
+                'settlement_delay': kwargs.get('settlement_delay') or 0
             }
         }
         if 'process_in' in kwargs:
